@@ -20,7 +20,7 @@ module.exports = {
              * Filter for Instrumenting Lifecycle of Components / True = Will be instrumented
              */
             instrument: (filename) => {
-                return false;
+				return false;
             }
         },
 
@@ -30,7 +30,20 @@ module.exports = {
              * True = Will be instrumented
              */
             instrument: (filename) => {
-                return true;
+                try {
+					const path = require('path');
+					if(filename.endsWith(path.sep + "G.tsx") || filename.endsWith(path.sep + "GestureHandlerRootView.android.tsx") ||
+						filename.endsWith(path.sep + "gestureHandlerRootHOC.tsx") || filename.endsWith(path.sep + "createAnimatedComponent.js") ||
+						filename.endsWith(path.sep + "Animated.js")) {
+							console.log("Skipping file " + filename);
+							return false;
+					}
+					
+					return true;
+				} catch (err) {
+					console.log(err);
+					return false;
+				}
             }
         }
     },

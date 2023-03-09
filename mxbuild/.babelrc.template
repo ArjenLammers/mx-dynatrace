@@ -1,0 +1,22 @@
+\{
+  "presets": ["{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/babel-plugin-inline-import",
+      \{
+        "extensions": [".svg"]
+      \}
+    ],
+	[
+	  '@babel/plugin-transform-react-jsx',
+	  \{
+		  runtime: 'automatic',
+		  importSource: "{ProjectDir:HtmlAttributeEncode}/javascriptsource/dynatrace/actions/node_modules/@dynatrace/react-native-plugin/lib"
+	  \}
+	 ],
+	 [
+		'{ProjectDir:HtmlAttributeEncode}/javascriptsource/dynatrace/actions/mendix-dynatrace-babel-plugin',
+		\{\}
+	 ]
+  ]
+\}

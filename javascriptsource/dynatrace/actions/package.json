@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@dynatrace/react-native-plugin": "^2.259.3"
+  }
+}

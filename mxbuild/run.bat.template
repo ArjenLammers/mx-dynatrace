@@ -1,0 +1,2 @@
+set NODE_PATH={InstallDir:HtmlAttributeEncode}\\modeler\\tools\\node\\node_modules
+"{InstallDir:HtmlAttributeEncode}\\modeler\\tools\\node\\node.exe" "{InstallDir:HtmlAttributeEncode}\\modeler\\tools\\node\\node_modules\\react-native\\local-cli\\cli.js" start --config "metro.config.js" --custom-log-reporter-path "{InstallDir:HtmlAttributeEncode}\\modeler\\tools\\node\\MxTerminalReporter.js" --port "8083"
