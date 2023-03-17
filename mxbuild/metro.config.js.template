@@ -50,8 +50,7 @@ module.exports = \{
       "@react-native-community/masked-view": "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/@react-native-community/masked-view",
       "eventemitter3": "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/eventemitter3",
       "mendix": "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/mendix",
-      "mx-global": "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/mx-global",
-	  "@dynatrace/react-native-plugin": "{ProjectDir:HtmlAttributeEncode}/javascriptsource/dynatrace/actions/node_modules/@dynatrace/react-native-plugin" 
+      "mx-global": "{InstallDir:HtmlAttributeEncode}/modeler/tools/node/node_modules/mx-global"
     \}
   \},
   "cacheVersion": "{MxBuildNumber}"
